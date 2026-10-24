@@ -1,0 +1,38 @@
+/* *{
+    margin: 0;
+} */
+li{
+    background-color: aqua;
+    height: 50px;
+}
+p{
+    background-color: brown;
+    width:500px;
+}
+h3{
+    background-color: chocolate;
+    width: 50%;
+    text-align: center;
+}
+.same{
+    background-color: rgba(0, 0, 0, 0.212);
+    max-width: 700px;
+}
+#diff{
+    background-color: cadetblue;
+    font-weight: 700;
+    text-align: center;
+}
+input[type="password"]{
+    color: aquamarine;
+}
+input{
+    margin: 50px;
+}
+.blog{
+    background-color: rgb(154, 119, 137);
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: red 10px 10px 60px;
+}
