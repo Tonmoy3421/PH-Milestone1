@@ -1,0 +1,14 @@
+ul li{
+    list-style: none;
+    display: inline;
+    margin: 15px;
+}
+ul li a:hover{
+    color: rgb(190, 215, 215);
+}
+/* ul li a:visited{
+    color: rgb(206, 124, 124);
+} */
+li a{
+    text-decoration: none;
+}
