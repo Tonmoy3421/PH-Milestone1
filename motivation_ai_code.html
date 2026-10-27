@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Can Do It | Motivation</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Poppins:wght@300;400;600;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            background: #050505;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .poster {
+            position: relative;
+            width: 100%;
+            max-width: 1100px;
+            min-height: 850px;
+            padding: 55px 40px;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid #333;
+            border-radius: 20px;
+            background:
+                radial-gradient(ellipse at 50% 20%,
+                    rgba(0, 110, 255, 0.20), transparent 50%),
+                radial-gradient(ellipse at 10% 90%,
+                    rgba(160, 0, 255, 0.14), transparent 40%),
+                linear-gradient(145deg, #101010, #050505 65%);
+            box-shadow: 0 0 60px rgba(0, 110, 255, 0.12);
+        }
+
+        .poster::before {
+            content: "";
+            position: absolute;
+            inset: 15px;
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 12px;
+            pointer-events: none;
+        }
+
+        .top-label {
+            color: #00d9ff;
+            font-size: 13px;
+            letter-spacing: 7px;
+            font-weight: 600;
+            margin-bottom: 35px;
+        }
+
+        .headline {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(45px, 9vw, 105px);
+            font-weight: 900;
+            line-height: 1.12;
+            letter-spacing: -3px;
+        }
+
+        .headline span {
+            display: block;
+        }
+
+        .you {
+            color: white;
+            text-shadow: 0 0 25px rgba(255,255,255,0.15);
+        }
+
+        .can {
+            background: linear-gradient(90deg, #00e5ff, #4785ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            filter: drop-shadow(0 0 18px rgba(0,180,255,0.3));
+        }
+
+        .do-it {
+            color: #ffffff;
+            text-shadow:
+                0 0 15px rgba(0,220,255,0.4),
+                0 0 40px rgba(0,100,255,0.2);
+        }
+
+        .subtitle {
+            margin: 25px auto 35px;
+            max-width: 600px;
+            font-size: 16px;
+            color: #b9c4d0;
+            line-height: 1.9;
+        }
+
+        .divider {
+            width: 90px;
+            height: 3px;
+            margin: 0 auto 35px;
+            background: linear-gradient(90deg, #00d9ff, #7c4dff);
+            box-shadow: 0 0 15px #008cff;
+        }
+
+        .quotes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            max-width: 800px;
+            margin: 0 auto 35px;
+            text-align: left;
+        }
+
+        .quote {
+            padding: 20px;
+            border: 1px solid #292929;
+            border-left: 3px solid #00cfff;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.025);
+            transition: 0.3s ease;
+        }
+
+        .quote:hover {
+            transform: translateY(-4px);
+            border-color: #00bfff;
+            background: rgba(0,180,255,0.06);
+        }
+
+        .quote p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #e5e5e5;
+        }
+
+        .quote strong {
+            color: #00d9ff;
+            font-size: 11px;
+            letter-spacing: 2px;
+            display: block;
+            margin-top: 12px;
+        }
+
+        .manifesto {
+            margin: 35px auto;
+            max-width: 700px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(13px, 2.5vw, 19px);
+            line-height: 2.2;
+            letter-spacing: 2px;
+        }
+
+        .manifesto span {
+            color: #00d9ff;
+        }
+
+        .footer {
+            margin-top: 35px;
+            color: #6d7785;
+            font-size: 10px;
+            letter-spacing: 4px;
+        }
+
+        .footer b {
+            color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            .poster {
+                padding: 45px 25px;
+                min-height: auto;
+            }
+
+            .top-label {
+                letter-spacing: 3px;
+                font-size: 10px;
+            }
+
+            .headline {
+                letter-spacing: -2px;
+            }
+
+            .quotes {
+                grid-template-columns: 1fr;
+            }
+
+            .quote {
+                padding: 16px;
+            }
+
+            .subtitle {
+                font-size: 14px;
+            }
+        }
+
+        /* Clean poster printing */
+        @media print {
+            body {
+                padding: 0;
+                background: #050505;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .poster {
+                max-width: none;
+                border-radius: 0;
+                min-height: 100vh;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="poster">
+
+        <div class="top-label">
+            YOUR FUTURE STARTS NOW
+        </div>
+
+        <h1 class="headline">
+            <span class="you">YOU</span>
+            <span class="can">CAN</span>
+            <span class="do-it">DO IT.</span>
+        </h1>
+
+        <p class="subtitle">
+            You were not born to live an ordinary life.
+            Dream bigger. Work harder. Stay humble.
+            Become the person you know you can be.
+        </p>
+
+        <div class="divider"></div>
+
+        <section class="quotes">
+
+            <article class="quote">
+                <p>"Great things never come from comfort zones."</p>
+                <strong>01 / GET UNCOMFORTABLE</strong>
+            </article>
+
+            <article class="quote">
+                <p>"Discipline will take you where motivation cannot."</p>
+                <strong>02 / STAY DISCIPLINED</strong>
+            </article>
+
+            <article class="quote">
+                <p>"Your only limit is the one you refuse to overcome."</p>
+                <strong>03 / BREAK YOUR LIMITS</strong>
+            </article>
+
+            <article class="quote">
+                <p>"Work in silence. Let your success make the noise."</p>
+                <strong>04 / BUILD YOUR FUTURE</strong>
+            </article>
+
+            <article class="quote">
+                <p>"One day, your struggles will become your strength."</p>
+                <strong>05 / NEVER GIVE UP</strong>
+            </article>
+
+            <article class="quote">
+                <p>"Small progress every day adds up to big results."</p>
+                <strong>06 / KEEP MOVING</strong>
+            </article>
+
+        </section>
+
+        <div class="manifesto">
+            NO EXCUSES. <span>NO QUITTING.</span><br>
+            JUST FOCUS. <span>JUST GROWTH.</span><br>
+            YOUR TIME IS <span>NOW.</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="subtitle">
+            The future belongs to the people who refuse to give up on themselves.
+            Believe in your potential. Prove it through your actions.
+        </p>
+
+        <footer class="footer">
+            <b>THINK BIG.</b> WORK HARD. STAY STRONG.
+        </footer>
+
+    </main>
+</body>
+</html>
